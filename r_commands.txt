@@ -1,0 +1,86 @@
+# Load affy and frma libraries for preprocessing
+library(affy)
+library(frma)
+
+# Load CEL files and convert to expression set.
+# Ensure your R directory is set to the one which contains the noted folders
+#   below.
+# These folders are named after the individual dataset GSE number and contain
+#   their corresponding CEL files.
+# For example, all CEL files from GSE5460 are contained in the 5460 folder.
+folders <- list("5460", "10780", "26457", "29431", "42568", "66162")
+dat <- vector("list", length(folders))
+j <- 1
+for (folder in folders) {
+  files <- dir(folder)
+  for (i in 1:length(files)) {
+    files[i] <- paste(paste(folder, "/", sep=""), files[i], sep="")
+  }
+
+  files <- as.character(files)
+  
+  cat("Reading", folder, "files\n")
+  data <- ReadAffy(filenames=files)
+  
+  cat("Converting to eset\n")
+  eset <- frma(data)
+  eset <- as.data.frame(exprs(eset))
+  eset <- t(eset)
+  dat[[j]] <- eset
+  j <- j + 1
+}
+# Use up to dat[[X]], where X is the number of individual datasets being used.
+eset <- rbind(dat[[1]], dat[[2]], dat[[3]], dat[[4]], dat[[5]], dat[[6]])
+cnames <- colnames(eset)
+
+# Load biomaRt library for Affymetrix probe to Entrez gene ID conversion.
+library("biomaRt")
+ensembl <- useMart(biomart="ensembl", dataset="hsapiens_gene_ensembl")
+affy_entrez=c("affy_hg_u133_plus_2", "entrezgene_id")
+annot <- getBM(attributes=affy_entrez, filters="affy_hg_u133_plus_2", values = "*", mart=ensembl)
+indices_lookup <- match(cnames, annot$affy_hg_u133_plus_2)
+dftmp <- data.frame(cnames, annot[indices_lookup, c("affy_hg_u133_plus_2", "entrezgene_id")])
+eset <- as.data.frame(t(eset))
+eset$entrez <- dftmp$entrezgene_id
+eset <- na.omit(eset)
+rownames <- eset$entrez
+eset <- eset[, !(names(eset) %in% c("entrez"))]
+dim(eset)
+
+# Load WGCNA library for combining rows with duplicate Entrez gene IDs.
+library(WGCNA)
+collapsed_df2 <- collapseRows(datET=eset, rowID=rownames(eset), rowGroup=rownames)
+collapsed_df2 <- data.frame(collapsed_df2$datETcollapsed)
+
+# Load preprocessCore library for quantile normalization.
+library(preprocessCore)
+df_norm2 <- as.data.frame(normalize.quantiles(as.matrix(collapsed_df2)))
+collapsed_df2[1:4,1:4]
+colnames(df_norm2) <- colnames(collapsed_df2)
+
+# Load sva library for removal of batch effects.
+library(sva)
+
+# Note: Use up to Y "rep" entries of rep(Y, Z) where Y is the number of
+#   individual datasets used and Z is the number of samples in that
+#   specific dataset.
+# For example, GSE5460 is the first dataset (1) and contains 127 samples.
+batch2 <- append(rep(1, 127), rep(2, 185))
+batch2 <- append(batch2, rep(3, 113))
+batch2 <- append(batch2, rep(4, 66))
+batch2 <- append(batch2, rep(5, 121))
+batch2 <- append(batch2, rep(6, 78))
+
+# Batch effect removal with ComBat
+combat_data2 <- ComBat(dat=df_norm2, batch=batch2)
+combat_data2 <- as.data.frame(combat_data2)
+rownames(combat_data2) <- rownames(collapsed_df2)
+combat_data2 <- t(combat_data2)
+cdwb <- combat_data2
+cdwb <- as.data.frame(cdwb)
+
+# Append batch variable to final dataset for validity
+cdwb$Batch <- batch2
+
+# Write the table
+write.table(cdwb, "c_nc_dataset_breast.dat", quote=FALSE)

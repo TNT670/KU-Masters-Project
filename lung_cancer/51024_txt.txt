@@ -1,0 +1,96 @@
+GSM1235016	Normal Paired Lung Parenchyma Tissue 1
+GSM1235017	Malignant Pleural Mesothelioma 1
+GSM1235018	Normal Paired Lung Parenchyma Tissue 2
+GSM1235019	Malignant Pleural Mesothelioma 2
+GSM1235020	Normal Paired Lung Parenchyma Tissue 3
+GSM1235021	Malignant Pleural Mesothelioma 3
+GSM1235022	Normal Paired Lung Parenchyma Tissue 4
+GSM1235023	Malignant Pleural Mesothelioma 4
+GSM1235024	Normal Paired Lung Parenchyma Tissue 5
+GSM1235025	Malignant Pleural Mesothelioma 5
+GSM1235026	Normal Paired Lung Parenchyma Tissue 6
+GSM1235027	Malignant Pleural Mesothelioma 6
+GSM1235028	Normal Paired Lung Parenchyma Tissue 7
+GSM1235029	Malignant Pleural Mesothelioma 7
+GSM1235030	Normal Paired Lung Parenchyma Tissue 8
+GSM1235031	Malignant Pleural Mesothelioma 8
+GSM1235032	Normal Paired Lung Parenchyma Tissue 9
+GSM1235033	Malignant Pleural Mesothelioma 9
+GSM1235034	Normal Paired Lung Parenchyma Tissue 10
+GSM1235035	Malignant Pleural Mesothelioma 10
+GSM1235036	Normal Paired Lung Parenchyma Tissue 11
+GSM1235037	Malignant Pleural Mesothelioma 11
+GSM1235038	Normal Paired Lung Parenchyma Tissue 12
+GSM1235039	Malignant Pleural Mesothelioma 12
+GSM1235040	Normal Paired Lung Parenchyma Tissue 13
+GSM1235041	Malignant Pleural Mesothelioma 13
+GSM1235042	Normal Paired Lung Parenchyma Tissue 14
+GSM1235043	Malignant Pleural Mesothelioma 14
+GSM1235044	Normal Paired Lung Parenchyma Tissue 15
+GSM1235045	Malignant Pleural Mesothelioma 15
+GSM1235046	Normal Paired Lung Parenchyma Tissue 16
+GSM1235047	Malignant Pleural Mesothelioma 16
+GSM1235048	Normal Paired Lung Parenchyma Tissue 17
+GSM1235049	Malignant Pleural Mesothelioma 17
+GSM1235050	Normal Paired Lung Parenchyma Tissue 18
+GSM1235051	Malignant Pleural Mesothelioma 18
+GSM1235052	Normal Paired Lung Parenchyma Tissue 19
+GSM1235053	Malignant Pleural Mesothelioma 19
+GSM1235054	Normal Paired Lung Parenchyma Tissue 20
+GSM1235055	Malignant Pleural Mesothelioma 20
+GSM1235056	Normal Paired Lung Parenchyma Tissue 21
+GSM1235057	Malignant Pleural Mesothelioma 21
+GSM1235058	Normal Paired Lung Parenchyma Tissue 22
+GSM1235059	Malignant Pleural Mesothelioma 22
+GSM1235060	Normal Paired Lung Parenchyma Tissue 23
+GSM1235061	Malignant Pleural Mesothelioma 23
+GSM1235062	Malignant Pleural Mesothelioma 52
+GSM1235063	Malignant Pleural Mesothelioma 53
+GSM1235064	Normal Paired Lung Parenchyma Tissue 24
+GSM1235065	Malignant Pleural Mesothelioma 24
+GSM1235066	Normal Paired Lung Parenchyma Tissue 25
+GSM1235067	Malignant Pleural Mesothelioma 25
+GSM1235068	Normal Paired Lung Parenchyma Tissue 26
+GSM1235069	Malignant Pleural Mesothelioma 26
+GSM1235070	Normal Paired Lung Parenchyma Tissue 27
+GSM1235071	Malignant Pleural Mesothelioma 27
+GSM1235072	Normal Paired Lung Parenchyma Tissue 28
+GSM1235073	Malignant Pleural Mesothelioma 28
+GSM1235074	Malignant Pleural Mesothelioma 54
+GSM1235075	Malignant Pleural Mesothelioma 55
+GSM1235076	Normal Paired Lung Parenchyma Tissue 29
+GSM1235077	Malignant Pleural Mesothelioma 29
+GSM1235078	Normal Paired Lung Parenchyma Tissue 30
+GSM1235079	Malignant Pleural Mesothelioma 30
+GSM1235080	Normal Paired Lung Parenchyma Tissue 31
+GSM1235081	Malignant Pleural Mesothelioma 31
+GSM1235082	Normal Paired Lung Parenchyma Tissue 32
+GSM1235083	Malignant Pleural Mesothelioma 32
+GSM1235084	Malignant Pleural Mesothelioma 42
+GSM1235085	Malignant Pleural Mesothelioma 43
+GSM1235086	Normal Paired Lung Parenchyma Tissue 33
+GSM1235087	Malignant Pleural Mesothelioma 33
+GSM1235088	Normal Paired Lung Parenchyma Tissue 34
+GSM1235089	Malignant Pleural Mesothelioma 34
+GSM1235090	Normal Paired Lung Parenchyma Tissue 35
+GSM1235091	Malignant Pleural Mesothelioma 35
+GSM1235092	Malignant Pleural Mesothelioma 44
+GSM1235093	Malignant Pleural Mesothelioma 45
+GSM1235094	Malignant Pleural Mesothelioma 46
+GSM1235095	Malignant Pleural Mesothelioma 47
+GSM1235096	Malignant Pleural Mesothelioma 48
+GSM1235097	Malignant Pleural Mesothelioma 49
+GSM1235098	Malignant Pleural Mesothelioma 50
+GSM1235099	Malignant Pleural Mesothelioma 51
+GSM1235100	Normal Paired Lung Parenchyma Tissue 36
+GSM1235101	Malignant Pleural Mesothelioma 36
+GSM1235102	Normal Paired Lung Parenchyma Tissue 37
+GSM1235103	Malignant Pleural Mesothelioma 37
+GSM1235104	Normal Paired Lung Parenchyma Tissue 38
+GSM1235105	Malignant Pleural Mesothelioma 38
+GSM1235106	Normal Paired Lung Parenchyma Tissue 39
+GSM1235107	Malignant Pleural Mesothelioma 39
+GSM1235108	Normal Paired Lung Parenchyma Tissue 40
+GSM1235109	Malignant Pleural Mesothelioma 40
+GSM1235110	Normal Paired Lung Parenchyma Tissue 41
+GSM1235111	Malignant Pleural Mesothelioma 41
