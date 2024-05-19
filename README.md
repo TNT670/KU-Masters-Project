@@ -8,4 +8,6 @@ Repository to store the files and code of my M.S. Computer Science project.
  - For colon cancer, [GSE23878](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE23878), [GSE71571](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE71571), [GSE92921](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE92921), and [GSE143985](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE143985).
  - For simplicity, make a new folder inside the corresponding cancer type folder and name it the GSE ID of the dataset you are downloading. For example, create a "5460" folder inside of the "breast_cancer" folder and place your downloaded CEL files from GSE5460 there, and so on.
 2. Copy and paste the R script into the cancer type folder and make any necessary changes as specified in the script.
-3. Run the script. A table will be output.
+3. Run the commands in the script. A table will be output at the end; you can specify the name of the table if necessary.
+4. Next, open the Jupyter Notebook and ensure that the global variables and the name of the table just output are correct.
+5. Run the Jupyter Notebook cells.
