@@ -1,6 +1,38 @@
 # KU-Masters-Project
 Repository to store the files and code of my M.S. Computer Science project.
 
+## Dependencies/packages required
+
+### R:
+Bioconductor (primary resource for most of the microarray analysis tools). Once installed, use BiocManager::install to install:
+- affy
+- biomaRt
+- WGCNA
+- preprocessCore
+- sva
+
+Also install:
+- ggplot2
+- ggfortify
+
+### Python
+Using a virtual environment either via python or conda can be helpful. A conda virtual environment makes setting up Keras to train MLP models via GPU much easier as well.
+
+Otherwise, be sure the following are installed:
+- python3 (3.9+ recommended)
+- numpy
+- pandas
+- matplotlib
+- scikit-learn
+- tensorflow
+- keras
+- keras-tuner
+- xgboost
+
+Recommended:
+- sklearnex (can speed up certain scikit-learn operations if using an Intel machine)
+- joblib (to store trained models and skip retraining on re-runs)
+
 ## Steps to Run
 1. Gather the data. The report uses the following individual datasets:
  - For breast cancer, [GSE5460](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE5460), [GSE10780](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE10780), [GSE26457](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE26457), [GSE29431](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE29431), [GSE42568](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE42568), and [GSE66162](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE66162).
