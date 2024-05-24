@@ -42,4 +42,5 @@ Recommended:
 2. Copy and paste the R script into the cancer type folder and make any necessary changes as specified in the script.
 3. Run the commands in the script. A table will be output at the end; you can specify the name of the table if necessary.
 4. Next, open the Jupyter Notebook and ensure that the global variables and the name of the table just output are correct.
-5. Run the Jupyter Notebook cells.
+5. Observe the order of the datasets and samples in the train dataframe, and adjust the label array so that the corresponding labels are in the same order as the samples if necessary. Changes can be made to any of the models if necessary.
+6. Run the Jupyter Notebook cells.
