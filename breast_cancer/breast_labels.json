@@ -1,0 +1,13 @@
+{
+  "cancer": "breast",
+  "data_dir": "breast_cancer",
+  "output_prefix": "c_nc_dataset_breast",
+  "datasets": [
+    { "gse": "5460",   "n_samples": 127, "labels": {"type": "uniform", "value": 1} },
+    { "gse": "10780",  "n_samples": 185, "labels": {"type": "text", "file": "10780_txt.txt", "match": "contains", "patterns": ["IDC"], "match_label": 1} },
+    { "gse": "26457",  "n_samples": 113, "labels": {"type": "uniform", "value": 0} },
+    { "gse": "29431",  "n_samples": 66,  "labels": {"type": "blocks", "blocks": [{"value": 0, "count": 12}, {"value": 1, "count": 54}]} },
+    { "gse": "42568",  "n_samples": 121, "labels": {"type": "blocks", "blocks": [{"value": 0, "count": 17}, {"value": 1, "count": 104}]} },
+    { "gse": "66162",  "n_samples": 78,  "labels": {"type": "uniform", "value": 0} }
+  ]
+}

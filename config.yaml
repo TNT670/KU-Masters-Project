@@ -1,0 +1,34 @@
+breast_cancer:
+  dir: "./breast_cancer"
+  output_prefix: "c_nc_dataset_breast"
+  datasets:
+    - gse: "5460"
+      exclude:
+        - "GSM125119"
+        - "GSM125120"
+    - gse: "10780"
+    - gse: "26457"
+    - gse: "29431"
+    - gse: "42568"
+    - gse: "66162"
+      exclude:
+        - "GSM1615577-GSM1615614"
+        - "GSM1615667-GSM1615700"
+
+lung_cancer:
+  dir: "./lung_cancer"
+  output_prefix: "c_nc_dataset_lung"
+  datasets:
+    - gse: "19188"
+    - gse: "19804"
+    - gse: "27262"
+    - gse: "51024"
+
+colon_cancer:
+  dir: "./colon_cancer"
+  output_prefix: "c_nc_dataset_colon"
+  datasets:
+    - gse: "23878"
+    - gse: "71571"
+    - gse: "92921"
+    - gse: "143985"

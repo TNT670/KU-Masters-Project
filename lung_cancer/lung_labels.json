@@ -1,0 +1,11 @@
+{
+  "cancer": "lung",
+  "data_dir": "lung_cancer",
+  "output_prefix": "c_nc_dataset_lung",
+  "datasets": [
+    { "gse": "19188", "n_samples": 156, "labels": {"type": "text", "file": "19188_txt.txt", "match": "endswith", "patterns": ["tu", "T"], "match_label": 1} },
+    { "gse": "19804", "n_samples": 120, "labels": {"type": "blocks", "blocks": [{"value": 1, "count": 60}, {"value": 0, "count": 60}]} },
+    { "gse": "27262", "n_samples": 50,  "labels": {"type": "alternating", "first_value": 0} },
+    { "gse": "51024", "n_samples": 96,  "labels": {"type": "text", "file": "51024_txt.txt", "match": "contains", "patterns": ["Normal"], "match_label": 0} }
+  ]
+}

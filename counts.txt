@@ -1,0 +1,14 @@
+./breast_cancer/GSE5460_RAW.tar 129
+./breast_cancer/GSE10780_RAW.tar 185
+./breast_cancer/GSE26457_RAW.tar 113
+./breast_cancer/GSE29431_RAW.tar 66
+./breast_cancer/GSE42568_RAW.tar 121
+./breast_cancer/GSE66162_RAW.tar 150
+./lung_cancer/GSE19188_RAW.tar 156
+./lung_cancer/GSE19804_RAW.tar 120
+./lung_cancer/GSE27262_RAW.tar 50
+./lung_cancer/GSE51024_RAW.tar 96
+./colon_cancer/GSE23878_RAW.tar 59
+./colon_cancer/GSE71571_RAW.tar 176
+./colon_cancer/GSE92921_RAW.tar 118
+./colon_cancer/GSE143985_RAW.tar 182

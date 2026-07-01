@@ -1,0 +1,43 @@
+# Raw data (downloaded from GEO; too large for GitHub)
+*.tar
+*.tar.gz
+
+# Tarball extraction cache (recreated on first run)
+.extracted/
+
+# Preprocessing outputs (regenerate with preprocess.R)
+*.dat
+
+# Trained-model and Keras Tuner caches (regenerate by running the notebooks)
+pkls/
+kt_*/
+*.keras
+*.pkl
+
+# Legacy original notebooks (superseded by {cancer}_cancer.ipynb)
+*_upd.ipynb
+*_loo*.ipynb
+
+# Legacy R script (superseded by preprocess.R)
+r_commands.txt
+
+# Internal refactor working docs (not for publication)
+REFACTOR_STEP*.md
+
+# R session state
+.RData
+.Rhistory
+.Rproj.user/
+
+# Python / Jupyter
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.venv/
+venv/
+
+# OS / editor cruft
+.DS_Store
+Thumbs.db
+*.swp
+*.kate-swp

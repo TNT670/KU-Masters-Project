@@ -1,0 +1,11 @@
+{
+  "cancer": "colon",
+  "data_dir": "colon_cancer",
+  "output_prefix": "c_nc_dataset_colon",
+  "datasets": [
+    { "gse": "23878",  "n_samples": 59,  "labels": {"type": "blocks", "blocks": [{"value": 1, "count": 35}, {"value": 0, "count": 24}]} },
+    { "gse": "71571",  "n_samples": 176, "labels": {"type": "uniform", "value": 0} },
+    { "gse": "92921",  "n_samples": 59,  "labels": {"type": "uniform", "value": 1} },
+    { "gse": "143985", "n_samples": 91,  "labels": {"type": "uniform", "value": 1} }
+  ]
+}
