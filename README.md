@@ -232,9 +232,3 @@ This project builds on the following open-source libraries:
 - **Keras** — Chollet F, et al. (2015). Keras. <https://keras.io>
 - **KerasTuner** — O'Malley T, Bursztein E, Long J, Chollet F, Jin H, Invernizzi L, et al. (2019). KerasTuner. <https://github.com/keras-team/keras-tuner>
 - **PyTorch** (Keras 3 backend) — Paszke A, et al. (2019). PyTorch: An Imperative Style, High-Performance Deep Learning Library. *Advances in Neural Information Processing Systems* 32:8024–8035. [link](https://papers.neurips.cc/paper/9015-pytorch-an-imperative-style-high-performance-deep-learning-library)
-
-### Optional (cite only if you use the corresponding feature)
-
-
-
-* appear in the install instructions only as transitive dependencies of `sva` (they are never called directly), so they are covered by the `sva` citation above rather than listed separately. Utility libraries `optparse`, `yaml`, `joblib`, and `sklearnex` (Intel Extension for Scikit-learn) do not request formal academic citation; reference their project pages if needed.*
